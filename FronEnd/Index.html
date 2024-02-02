@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="">
+<body class="bg-secondary">
     <!-- header section start -->
-    <header class="header w-75 mx-auto">
-        <nav class="navbar navbar-expand-lg bg-light">
+    <header class="header w-75 mx-auto bg-white">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-center align-items-center">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">
+                    <img src="images/cf-logo.png" alt="Bootstrap" width="50" height="50">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -54,9 +56,14 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="search-input form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="search btn border-0 d-flex" type="submit">
+                            <i class="search-icon fa-solid fa-magnifying-glass mt-2" onpointermove="act()"></i>
+                        </button>
                     </form>
+                    <a href=""><i class="fa-regular fa-user"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
         </nav>
